@@ -11,9 +11,11 @@ A react native component that show image with text
 - Zero configuration. (Options are needed of course or a loading indicator will show.)
 - Highly customizable.
 
-https://github.com/ManojKanth/image-with-text-component/blob/main/images/image1.png?raw=true
+<p align="center">
+  <img src="https://github.com/ManojKanth/image-with-text-component/blob/main/images/image1.png?raw=true" width="350" title="hover text">
+  <img src="https://github.com/ManojKanth/image-with-text-component/blob/main/images/image2.png?raw=true" width="350" alt="accessibility text">
+</p>
 
-https://github.com/ManojKanth/image-with-text-component/blob/main/images/image2.png?raw=true
 
 > if you didn't passed subtitle it will appear as second image
 > if you passed subtitle it will appear as first image
