@@ -39,7 +39,9 @@ const ProfileImageWithText = ({
       </View>
       <View style={styles.NameContainer}>
         <Text style={titleStyle}>{title}</Text>
-        <Text style={subTitleStyle}>{subTitle}</Text>
+        {subTitle !== '' ? 
+        <Text style={subTitleStyle}>{subTitle}</Text> :
+        <View/>  }
       </View>
     </View>
   );
