@@ -1,5 +1,6 @@
 import React from 'react';
 import {StyleSheet, Text, View, Image} from 'react-native';
+import PropTypes from 'prop-types';
 
 const ProfileImageWithText = ({
   title = '',
@@ -31,6 +32,18 @@ const ProfileImageWithText = ({
     </View>
   );
 };
+
+
+ProfileImageWithText.propTypes= {
+  propName: PropTypes.string.isRequired,
+  title: PropTypes.string,
+  subTitle: PropTypes.string,
+  image: PropTypes.string,
+  profileImageContainerStyle: PropTypes.object,
+  imageWidthConstant: PropTypes.number,
+  titleStyle: PropTypes.object,
+  subTitleStyle: PropTypes.object,
+}
 
 const styles = StyleSheet.create({
   FooterFirstContainer: {flexDirection: 'row', alignItems: 'center'},
