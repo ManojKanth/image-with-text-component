@@ -24,7 +24,6 @@ if you want to show image from URI use imageUri. or show an image from project j
 
 ## Tech
 
-Dillinger uses a number of open source projects to work properly:
 
 - if you want to show image from URI use imageUri param
 - to show a image from project just use image param
