@@ -19,7 +19,8 @@ const ProfileImageWithText = ({
   },
   titleStyle = styles.titleStyle,
   subTitleStyle = styles.subTitleStyle,
-  imageUri = ''
+  imageUri = '',
+  imageViewStyle= {}
 }) => {
   const imageStyle = {
     width: imageWidthConstant,
@@ -33,7 +34,7 @@ const ProfileImageWithText = ({
     <View style={styles.FooterFirstContainer}>
       <View style={profileImageContainerStyle}>
         <Image
-          style={imageStyle}
+          style={[imageStyle, imageViewStyle]}
           source={image !== '' ? image :  imageUriString}
         />
       </View>
@@ -56,7 +57,8 @@ ProfileImageWithText.propTypes= {
   imageWidthConstant: PropTypes.number,
   titleStyle: PropTypes.object,
   subTitleStyle: PropTypes.object,
-  imageUriString: PropTypes.string
+  imageUriString: PropTypes.string,
+  imageViewStyle: PropTypes.object
 }
 
 const styles = StyleSheet.create({

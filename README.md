@@ -47,7 +47,8 @@ Use as a component:
 <ProfileImageWithText 
         title='Manojkanth' 
         title='Mobile dev' 
-        imageUri='https://reactjs.org/logo-og.png' />
+        imageUri='https://reactjs.org/logo-og.png'
+        imageViewStyle={{resizeMode: 'repeat'}} />
 ```
 
 
@@ -60,8 +61,9 @@ Use as a component:
 | imageUri | String | No | '' | use this params to so an image from URL
 | image | String | No | '' | to show an image from project (Note: Please one of image or imageUri must be passed)
 | profileImageContainerStyle | String | No | '' | style of Profile Image Container
-| titleStyle | String | No | '' | style of title text
-| subTitleStyle | String | No | '' | style of subtitle text
+| titleStyle | Object | No | '' | style of title text
+| subTitleStyle | Object | No | '' | style of subtitle text
+| imageViewStyle | Object | No | '' | style of image
 
 ## Development
 
