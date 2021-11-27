@@ -32,5 +32,12 @@
     "imageView",
     "text with image",
     "profile image with text"
-  ]
+  ],
+  "bugs": {
+    "url": "https://github.com/ManojKanth/image-with-text-component/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ManojKanth/image-with-text-component"
+  }
 }
