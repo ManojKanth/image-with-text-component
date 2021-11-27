@@ -5,24 +5,36 @@ import PropTypes from 'prop-types';
 const ProfileImageWithText = ({
   title = '',
   subTitle = '',
-  image,
-  profileImageContainerStyle = styles.ProfilePictureRound,
-  imageWidthConstant = 26,
+  image = '',
+  imageWidthConstant = 30,
+  profileImageContainerStyle = {
+    backgroundColor: '#fff',
+    borderRadius: imageWidthConstant / 2,
+    width: imageWidthConstant,
+    height: imageWidthConstant,
+    overflow: 'hidden',
+    marginRight: 4,
+    borderWidth: 1,
+    borderColor: '#000',
+  },
   titleStyle = styles.titleStyle,
   subTitleStyle = styles.subTitleStyle,
+  imageUri = ''
 }) => {
   const imageStyle = {
     width: imageWidthConstant,
     height: imageWidthConstant,
   };
+
+  const imageUriString = {
+    uri: imageUri
+  }
   return (
     <View style={styles.FooterFirstContainer}>
       <View style={profileImageContainerStyle}>
         <Image
           style={imageStyle}
-          source={{
-            uri: image,
-          }}
+          source={image !== '' ? image :  imageUriString}
         />
       </View>
       <View style={styles.NameContainer}>
@@ -35,7 +47,6 @@ const ProfileImageWithText = ({
 
 
 ProfileImageWithText.propTypes= {
-  propName: PropTypes.string.isRequired,
   title: PropTypes.string,
   subTitle: PropTypes.string,
   image: PropTypes.string,
@@ -43,18 +54,11 @@ ProfileImageWithText.propTypes= {
   imageWidthConstant: PropTypes.number,
   titleStyle: PropTypes.object,
   subTitleStyle: PropTypes.object,
+  imageUriString: PropTypes.string
 }
 
 const styles = StyleSheet.create({
   FooterFirstContainer: {flexDirection: 'row', alignItems: 'center'},
-  ProfilePictureRound: {
-    backgroundColor: '#D837BF',
-    borderRadius: 13,
-    width: 26,
-    height: 26,
-    overflow: 'hidden',
-    marginRight: 4,
-  },
   NameContainer: {
     paddingLeft: 5,
   },
