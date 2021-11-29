@@ -8,7 +8,6 @@ A react native component that show image with text
 - Pure JS.
 - Compatible with both iOS and Android.
 - Auto position. (Won't be covered or clipped by the edge of screen.)
-- Zero configuration. (Options are needed of course or a loading indicator will show.)
 - Highly customizable.
 
 <p align="center">
