@@ -46,7 +46,7 @@ Use as a component:
 ```sh
 <ProfileImageWithText 
         title='Manojkanth' 
-        title='Mobile dev' 
+        subTitle='Mobile dev' 
         imageUri='https://reactjs.org/logo-og.png'
         imageViewStyle={{resizeMode: 'repeat'}} />
 ```
