@@ -39,7 +39,7 @@ const ProfileImageWithText = ({
         />
       </View>
       <View style={styles.NameContainer}>
-        <Text style={titleStyle}>{title}</Text>
+        <Text style={titleStyle} numberOfLines={1} ellipsizeMode="tail">{title}</Text>
         {subTitle !== '' ? 
         <Text style={subTitleStyle}>{subTitle}</Text> :
         <View/>  }

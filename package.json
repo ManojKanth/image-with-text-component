@@ -1,6 +1,6 @@
 {
   "name": "image-with-text-component",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A react native component that show image with text",
   "main": "index.js",
   "scripts": {
